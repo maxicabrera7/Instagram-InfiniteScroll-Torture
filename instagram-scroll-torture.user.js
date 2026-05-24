@@ -6,8 +6,8 @@
 // @version      2.0
 // @author       Auditor
 // @description  Bloqueo progresivo del scroll para desincentivar el uso.
-// @updateURL    https://raw.githubusercontent.com/maxicabrera7/Instagram-InfiniteScroll-Torture/refs/heads/main/instagram-scroll-torture.user.js.js
-// @downloadURL  https://raw.githubusercontent.com/maxicabrera7/Instagram-InfiniteScroll-Torture/refs/heads/main/instagram-scroll-torture.user.js.js
+// @updateURL    https://raw.githubusercontent.com/maxicabrera7/Instagram-InfiniteScroll-Torture/refs/heads/main/instagram-scroll-torture.user.js
+// @downloadURL  https://raw.githubusercontent.com/maxicabrera7/Instagram-InfiniteScroll-Torture/refs/heads/main/instagram-scroll-torture.user.js
 // ==/UserScript==
 
 (function () {
