@@ -50,6 +50,6 @@ Instala la extensión a nivel corporativo en el sistema operativo: impide deshab
 Ejecutar en terminal:
 
 ```bash
-git clone https://github.com/maxicabrera7/Instagram-InfiniteScroll-Torture.git ~/dev/ig-blocker
+git clone [https://github.com/maxicabrera7/Instagram-InfiniteScroll-Torture.git](https://github.com/maxicabrera7/Instagram-InfiniteScroll-Torture.git) ~/dev/ig-blocker
 cd ~/dev/ig-blocker
 bash install.sh
