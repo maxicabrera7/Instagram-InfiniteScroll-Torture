@@ -53,3 +53,21 @@ git clone [https://github.com/maxicabrera7/Instagram-InfiniteScroll-Torture.git]
 cd ~/dev/ig-blocker
 bash install.sh
 ```
+### Desinstalación (Instalación por Directiva)
+
+La directiva `force_installed` impide deshabilitar o eliminar la extensión desde la interfaz gráfica (`about:addons`). Para removerla, es necesario purgar el archivo de políticas a nivel de sistema operativo y matar los procesos en memoria.
+
+**Firefox Nativo (RPM/DEB):**
+
+```bash
+sudo rm -f /etc/firefox/policies/policies.json
+pkill -f firefox
+```
+
+**Firefox Flatpak:**
+
+```bash
+rm -f ~/.var/app/org.mozilla.firefox/config/firefox/policies/policies.json
+flatpak override --user --reset org.mozilla.firefox
+flatpak kill org.mozilla.firefox
+```
