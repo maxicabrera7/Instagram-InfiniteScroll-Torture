@@ -50,57 +50,6 @@ Instala la extensión a nivel corporativo en el sistema operativo: impide deshab
 Ejecutar en terminal:
 
 ```bash
-# 1. Clonar repositorio en la ruta de trabajo
-mkdir -p ~/dev && cd ~/dev
-git clone [https://github.com/maxicabrera7/Instagram-InfiniteScroll-Torture.git](https://github.com/maxicabrera7/Instagram-InfiniteScroll-Torture.git) ig-blocker
-cd ig-blocker
-
-# 2. Generar el manifiesto para Firefox
-cat << 'EOF' > manifest.json
-{
-  "manifest_version": 3,
-  "name": "Instagram Scroll Torture",
-  "version": "2.6.0",
-  "description": "Bloqueo progresivo e ineludible para Instagram",
-  "browser_specific_settings": {
-    "gecko": {
-      "id": "ig-torture@maxicabrera.dev"
-    }
-  },
-  "content_scripts": [
-    {
-      "matches": ["[https://www.instagram.com/](https://www.instagram.com/)*"],
-      "js": ["content.js"],
-      "run_at": "document_start"
-    }
-  ]
-}
-EOF
-
-# 3. Extraer el código JavaScript descartando las cabeceras de Violentmonkey
-sed '/^\/\/ ==UserScript==/,/^\/\/ ==\/UserScript==/d' instagram-scroll-torture.user.js > content.js
-
-# 4. Empaquetar la extensión en formato XPI
-zip -r -FS ig-torture.xpi manifest.json content.js
-chmod 644 ig-torture.xpi
-
-# 5. Escribir la política de sistema en Firefox
-sudo mkdir -p /etc/firefox/policies
-sudo tee /etc/firefox/policies/policies.json > /dev/null << EOF
-{
-  "policies": {
-    "ExtensionSettings": {
-      "ig-torture@maxicabrera.dev": {
-        "installation_mode": "force_installed",
-        "install_url": "file://${PWD}/ig-torture.xpi"
-      }
-    },
-    "DisableDeveloperTools": false,
-    "DisablePrivateBrowsing": true
-  }
-}
-EOF
-
-# 6. Reiniciar Firefox para cargar las directivas
-pkill -f firefox || true
-firefox &
+git clone https://github.com/maxicabrera7/Instagram-InfiniteScroll-Torture.git ~/dev/ig-blocker
+cd ~/dev/ig-blocker
+bash install.sh
