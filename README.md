@@ -40,12 +40,11 @@ El bloqueo se dispara al alcanzar cualquiera de las siguientes condiciones en un
 ### Opción A: Userscript Convencional (Violentmonkey)
 
 1. Instalar [Violentmonkey](https://violentmonkey.github.io/).
-2. Crear un nuevo script y pegar el contenido de `instagram-scroll-torture.user.js`.
-3. Guardar cambios (`Ctrl+S`).
+2. Instalar el script directamente desde el repositorio [haciendo clic aquí](https://raw.githubusercontent.com/maxicabrera7/Instagram-InfiniteScroll-Torture/main/instagram-scroll-torture.user.js).
 
-### Opción B: Forzado por Directiva de Sistema (Fedora Linux / Firefox)
+### Opción B: Forzado por Directiva de Sistema (Linux / Firefox)
 
-Instala la extensión a nivel corporativo en el sistema operativo: impide deshabilitarla o removerla desde la interfaz gráfica de complementos y anula el modo incógnito.
+Instalación a nivel corporativo mediante `policies.json`. Despliega un binario `.xpi` previamente firmado por Mozilla e incluido en este repositorio. Esto anula la desinstalación desde el gestor de complementos, deshabilita el modo incógnito para evitar la evasión y soporta tanto instalaciones nativas (RPM/DEB) como Flatpak.
 
 Ejecutar en terminal:
 
@@ -53,3 +52,4 @@ Ejecutar en terminal:
 git clone [https://github.com/maxicabrera7/Instagram-InfiniteScroll-Torture.git](https://github.com/maxicabrera7/Instagram-InfiniteScroll-Torture.git) ~/dev/ig-blocker
 cd ~/dev/ig-blocker
 bash install.sh
+```
