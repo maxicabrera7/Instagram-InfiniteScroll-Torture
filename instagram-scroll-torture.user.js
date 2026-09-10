@@ -3,9 +3,10 @@
 // @namespace    Violentmonkey Scripts
 // @match        https://www.instagram.com/*
 // @grant        none
-// @version      2.3.0
+// @version      2.5.0
 // @author       maxicabrera7
 // @description  Bloqueo progresivo del scroll y reels con persistencia anti-recarga y métrica relativa.
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=instagram.com
 // @updateURL    https://raw.githubusercontent.com/maxicabrera7/Instagram-InfiniteScroll-Torture/main/instagram-scroll-torture.user.js
 // @downloadURL  https://raw.githubusercontent.com/maxicabrera7/Instagram-InfiniteScroll-Torture/main/instagram-scroll-torture.user.js
 // ==/UserScript==
