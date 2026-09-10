@@ -1,6 +1,7 @@
 # OS
 .DS_Store
 Thumbs.db
+._*
 
 # Editors
 .vscode/
@@ -10,3 +11,25 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Artefactos de empaquetado (se excluye el .xpi por dependencia de despliegue)
+*.zip
+*.tar.gz
+*.tar# OS
+.DS_Store
+Thumbs.db
+._*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Artefactos de empaquetado (se excluye el .xpi por dependencia de despliegue)
+*.zip
+*.tar.gz
+*.tar
