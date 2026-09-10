@@ -4,7 +4,7 @@
 // @match        https://www.instagram.com/*
 // @grant        none
 // @version      2.3.0
-// @author       Auditor
+// @author       maxicabrera7
 // @description  Bloqueo progresivo del scroll y reels con persistencia anti-recarga y métrica relativa.
 // @updateURL    https://raw.githubusercontent.com/maxicabrera7/Instagram-InfiniteScroll-Torture/main/instagram-scroll-torture.user.js
 // @downloadURL  https://raw.githubusercontent.com/maxicabrera7/Instagram-InfiniteScroll-Torture/main/instagram-scroll-torture.user.js
